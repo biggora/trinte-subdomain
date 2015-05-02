@@ -11,7 +11,7 @@ Subdomain Middleware for TrinteJS &amp; ExpressJS Javascript Frameworks.
 
 ### for [TrinteJS](http://www.trintejs.com/)
 
-#### manual setup in project config/middleware.js
+#### setup middleware in project `config/middleware.js`
 
 ```js
 var subdomain = require('trinte-subdomain');
@@ -37,7 +37,7 @@ module.exports = function (app, express) {
 }
 ```
 
-#### manual setup in project config/routes.js
+#### usage for namespace in project `config/routes.js`
 
 ```js
 module.exports = function routes(map, app) { 
@@ -54,9 +54,9 @@ module.exports = function routes(map, app) {
 ### for [ExpressJS](http://expressjs.com/)
 
 ```js
-var express = require('express')
-  , app = express.createServer()
-  , subdomain = require('trinte-subdomain');
+var express = require('express');
+var app = express();
+var subdomain = require('trinte-subdomain');
 
   ...
   app.use(subdomain({
