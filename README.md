@@ -36,6 +36,21 @@ module.exports = function (app, express) {
     ...
 }
 ```
+
+#### manual setup in project config/routes.js
+
+```js
+module.exports = function routes(map, app) { 
+
+    map.namespace('admin', {
+        subdomain: true
+     }, function(admin) {
+        admin.resources('users');
+    });
+    ...
+});
+```
+
 ### for [ExpressJS](http://expressjs.com/)
 
 ```js
