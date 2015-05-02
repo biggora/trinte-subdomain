@@ -9,9 +9,9 @@ Subdomain Middleware for TrinteJS &amp; ExpressJS Javascript Frameworks.
     
 ## Usage overview
 
-### for TrinteJS
+### for [TrinteJS](http://www.trintejs.com/)
 
-#### manual setup in project config/routes.js
+#### manual setup in project config/middleware.js
 
 ```js
 var subdomain = require('trinte-subdomain');
@@ -35,6 +35,36 @@ module.exports = function (app, express) {
     }));
     ...
 }
+```
+### for [ExpressJS](http://expressjs.com/)
+
+```js
+var express = require('express')
+  , app = express.createServer()
+  , subdomain = require('trinte-subdomain');
+
+  ...
+  app.use(subdomain({
+      base: 'mydomain.dev',
+      only : '(test|admin)',
+      except : '(group|panel|my)',
+      onSuccess: function(req, res, next){
+               console.log('onSuccess');
+               next();
+      },
+      onExcept: function(req, res, next){
+               console.log('onExcept');
+               next();
+      },
+      alias: {
+               '.*': 'admin'
+      }
+   }));
+
+   app.get('/subdomain/admin', function(req, res){
+      res.send('Ok!');
+   });
+   app.listen(3000);
 ```
 
 Options
