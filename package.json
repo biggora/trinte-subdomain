@@ -1,0 +1,52 @@
+{
+  "name": "trinte-subdomain",
+  "description": "Subdomain Middleware for TrinteJS & ExpressJS Javascript Frameworks.",
+  "homepage": "http://www.trintejs.com/",
+  "version": "0.0.1",
+  "keywords": [
+    "trinte",
+    "trintejs",
+    "express",
+    "connect",
+    "subdomain"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/biggora/trinte-subdomain/blob/master/LICENSE"
+    }
+  ],
+  "author": {
+    "name": "Aleksej Gordejev",
+    "email": "aleksej@gordejev.lv",
+    "url": "https://github.com/biggora/"
+  },
+  "contributors": [
+    {
+      "name": "Aleksej Gordejev",
+      "email": "aleksej@gordejev.lv",
+      "url": "https://github.com/biggora/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/biggora/trinte-subdomain.git"
+  },
+  "bugs": {
+    "url": "http://github.com/biggora/trinte-subdomain/issues",
+    "email": "aleksej@gordejev.lv"
+  },
+  "main": "./index.js",
+  "scripts": {},
+  "directories": {
+    "lib": "lib"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nodeunit": ">=0.5.4"
+  },
+  "optionalDependencies": {}
+}
