@@ -134,7 +134,7 @@ var subdomain = require('trinte-subdomain');
             `null`
         </td>
         <td>
-            Rewrite `url` only for specified subdomains
+            Rewrite `url` only for specified subdomains (optional) 
         </td>
     </tr>
     <tr>
@@ -148,7 +148,7 @@ var subdomain = require('trinte-subdomain');
             `null`
         </td>
         <td>
-            Don`t rewrite `url` for specified subdomains
+            Don`t rewrite `url` for specified subdomains (optional) 
         </td>
     </tr>
     <tr>
@@ -162,7 +162,7 @@ var subdomain = require('trinte-subdomain');
             `null`
         </td>
         <td>
-           Call this function if `url` rewrited
+           Call this function if `url` rewrited (optional) 
         </td>
     </tr>
     <tr>
@@ -176,7 +176,7 @@ var subdomain = require('trinte-subdomain');
             `null`
         </td>
         <td>
-            Call this function if `except` param test true
+            Call this function if `except` param test true (optional) 
         </td>
     </tr>    
     <tr>
@@ -190,14 +190,7 @@ var subdomain = require('trinte-subdomain');
            `null`
         </td>
         <td>
-            Subdomains mapping like:
-            ```js
-            {
-               alias: {
-                    '(admin|backend)': 'admin'
-                  }
-            }
-            ```
+            Subdomains mapping (optional) 
         </td>
     </tr>  
    </tbody>
