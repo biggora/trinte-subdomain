@@ -124,10 +124,10 @@ Options
             string
         </td>
         <td>
-            
+            null
         </td>
         <td>
-            Only for subdomains
+            Rewrite `url` only for specified subdomains
         </td>
     </tr>
     <tr>
@@ -138,10 +138,10 @@ Options
             string
         </td>
         <td>
-            
+            null
         </td>
         <td>
-            Except subdomains
+            Don`t rewrite `url` for specified subdomains
         </td>
     </tr>
     <tr>
@@ -152,10 +152,10 @@ Options
             function
         </td>
         <td>
-            
+            null
         </td>
         <td>
-            onSuccess callback
+           Call this function if `url` rewrited
         </td>
     </tr>
     <tr>
@@ -169,7 +169,7 @@ Options
            
         </td>
         <td>
-            onExcept callback
+            Call this function if `except` param test true
         </td>
     </tr>    
     <tr>
@@ -180,10 +180,17 @@ Options
             object
         </td>
         <td>
-           
+           null
         </td>
         <td>
-            Domains mapping
+            Subdomains mapping like:
+            ```
+            {
+               alias: {
+                    '(admin|backend)': 'admin'
+                  }
+            }
+            ```
         </td>
     </tr>     
 </table>

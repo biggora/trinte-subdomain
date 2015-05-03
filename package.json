@@ -2,7 +2,7 @@
   "name": "trinte-subdomain",
   "description": "Subdomain Middleware for TrinteJS & ExpressJS Javascript Frameworks.",
   "homepage": "http://www.trintejs.com/",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "trinte",
     "trintejs",
@@ -37,9 +37,12 @@
     "email": "aleksej@gordejev.lv"
   },
   "main": "./index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "nodeunit tests/*_test*"
+  },
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "tests": "tests"
   },
   "engines": {
     "node": ">=0.8"
