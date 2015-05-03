@@ -1,4 +1,6 @@
+[![Build Status](https://travis-ci.org/biggora/trinte-subdomain.png?branch=master)](https://travis-ci.org/biggora/trinte-subdomain)
 [![NPM version](https://badge.fury.io/js/trinte-subdomain.png)](http://badge.fury.io/js/trinte-subdomain)
+
 ## Subdomain Middleware for TrinteJS
 
 Subdomain Middleware for TrinteJS &amp; ExpressJS Javascript Frameworks.
