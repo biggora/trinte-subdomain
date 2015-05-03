@@ -89,8 +89,7 @@ var subdomain = require('trinte-subdomain');
     npm test
     
     
-Options
------------------
+### Options
 
 <table style="width:100%">
     <thead>
@@ -109,6 +108,7 @@ Options
             </th>
         </tr>
     </thead>
+    <tbody>
     <tr>
         <td>
             base
@@ -131,7 +131,7 @@ Options
             string
         </td>
         <td>
-            null
+            `null`
         </td>
         <td>
             Rewrite `url` only for specified subdomains
@@ -145,7 +145,7 @@ Options
             string
         </td>
         <td>
-            null
+            `null`
         </td>
         <td>
             Don`t rewrite `url` for specified subdomains
@@ -159,7 +159,7 @@ Options
             function
         </td>
         <td>
-            null
+            `null`
         </td>
         <td>
            Call this function if `url` rewrited
@@ -173,7 +173,7 @@ Options
             function
         </td>
         <td>
-           
+            `null`
         </td>
         <td>
             Call this function if `except` param test true
@@ -187,11 +187,11 @@ Options
             object
         </td>
         <td>
-           null
+           `null`
         </td>
         <td>
             Subdomains mapping like:
-            ```
+            ```js
             {
                alias: {
                     '(admin|backend)': 'admin'
@@ -199,7 +199,8 @@ Options
             }
             ```
         </td>
-    </tr>     
+    </tr>  
+   </tbody>
 </table>
 
 ### Copyright & License
