@@ -84,6 +84,11 @@ var subdomain = require('trinte-subdomain');
    app.listen(3000);
 ```
 
+### Tests
+
+    npm test
+    
+    
 Options
 -----------------
 
